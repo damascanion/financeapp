@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('financeApp.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -39,18 +39,23 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+  console.log("app ctrl");
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('MyStocksCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
+    { title: 'array object title property', id: 1 },
     { title: 'Chill', id: 2 },
     { title: 'Dubstep', id: 3 },
     { title: 'Indie', id: 4 },
     { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Cowbell', id: 6 },
+    { title: 'Reggae', id: 7 }
   ];
+  console.log("playlists ctrl");
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('StockCtrl', function($scope, $stateParams) {
+  
+  console.log("playlist ctrl");
 });
